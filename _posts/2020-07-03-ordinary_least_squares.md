@@ -280,3 +280,37 @@ $$
 $$
 
 Also, b and $\hat u$ are uncorrelated, since,
+
+
+
+
+$$
+\displaystyle 
+\mathop{\mathbb E}[\hat u(b - \beta)^T] = \mathop{\mathbb E}[M_Xu u^T X (X^TX)^{-1} = 0. \ \ \ \ \ (41)
+$$
+
+
+
+Since b and $\hat u$ are independent, b and $s^2$ are also independent.
+
+2.5. t Tests about $\beta$ Under Above Assumptions
+
+We wish to test the hypothesis that the ith element of $\beta}, $\beta_i}, is some particular value $\beta_i^0$.
+
+The t-statistic for testing this null hypothesis is
+
+$$
+\displaystyle t = \frac{b_i - \beta_i^0}{\hat \sigma_{b_i}} = \frac{b_i - \beta_i^0}{s (\xi^{ii})^2} \ \ \ \ \ (42)
+$$
+
+where $ \xi^{ii}$ denotes the ith column and ith row element of $(X^TX)^{-1}$ and $\hat \sigma_{b_i}$ is the standard error of the OLS estimate of the ith coefficient.
+
+Under the null hypothesis,
+
+$$
+\displaystyle b_i \sim N(\beta_i^0, \sigma^2 \xi^{ii}). \ \ \ \ \ (43)
+$$
+
+
+
+
