@@ -161,38 +161,6 @@ $$
 
 Example 2 Two experiments are conducted to test two prediction algorithms.
 
-The prediction algorithms are used to predict the outcomes {n} and {m} times, respectively, and have a probability of predicting with success as {p_1} and {p_2}, respectively.
-
-Let $\delta = p_1 - p_2$.
-
-Consider testing a two-sided hypothesis:
-
-$$
-\displaystyle H_0 \colon \delta = 0 \\ H_1 \colon \delta \neq 0. \ \ \ \ \ (19)
-$$
-
-3. The Likelihood Ratio Test
-
-This test can be used to test vector valued parameters as well.
-
-Definition 13 The likelihood ratio test statistic for testing $H_0 \colon \theta \in \Theta_0$ versus $H_1 \colon \theta \in \Theta_1$ is
-
-$$
-\displaystyle \lambda(x) = \frac{ \underset{\theta \in \Theta_0}{\text{sup}} (L( \theta|\mathbf{x} )) }{ \underset{\theta \in \Theta}{\text{sup}} (L( \theta|\mathbf{x} )) }. \ \ \ \ \ (20)
-$$
-
-$$
-\displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
-$$
-
-Theorem 12 Asymptotically, the Wald test has size $\alpha$.
-
-$$
-\displaystyle size \\ = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)) \\ = \underset{\theta \in \Theta_0}{\text{sup}}\mathbb{P}_{\theta}(X \in R) \\ = \mathbb{P}_{\theta_0}(X \in R) \\ = \mathbb{P}_{\theta_0}(|W| > z_{\alpha/2}) \\ = \mathbb{P}_{\theta_0}\left(\left| \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}\right| > z_{\alpha/2}\right) \\ \rightarrow \mathbb{P}(|Z| > z_{\alpha/2}) \\ = \alpha. \ \ \ \ \ (18)
-$$
-
-Example 2 Two experiments are conducted to test two prediction algorithms.
-
 The prediction algorithms are used to predict the outcomes $n$ and $m$ times, respectively, and have a probability of predicting with success as $p_1$ and $p_2$, respectively.
 
 Let $\delta = p_1 - p_2$.
@@ -212,4 +180,3 @@ Definition 13 The likelihood ratio test statistic for testing $H_0 \colon \theta
 $$
 \displaystyle \lambda(x) = \frac{ \underset{\theta \in \Theta_0}{\text{sup}} (L( \theta|\mathbf{x} )) }{ \underset{\theta \in \Theta}{\text{sup}} (L( \theta|\mathbf{x} )) }. \ \ \ \ \ (20)
 $$
-
