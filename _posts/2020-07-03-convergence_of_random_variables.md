@@ -39,9 +39,11 @@ at all $t$ for which $F$ is continuous.
 
 Let $X_1, X_2, \dotsc$ be $\textsc{iid}$ with mean $\mu = \mathbb{E}(X_1)$ and variance $\sigma^2 = \mathbb{V}(X_1)$. 
 
-Let sample mean be defined as $\overline{X}_n = (1/n)\sum_{i=1}^n X_i$. 
+Let sample mean be defined as $\overline{X}_n$  
+$ = $ 
+$ (1 / n) \sum_{i=1}^n X_i $. 
 
-It can be shown that $\mathbb{E}(\overline{X}_n) = \mu$ and $\mathbb{V}(\overline{X}_n) = \sigma^2/n$.
+It can be shown that $\mathbb{E}(\overline{X}_n) = \mu$ and $ \mathbb{V}(\overline{X}_n) = \sigma ^ 2 / n $.
 
 Theorem 3 
 
