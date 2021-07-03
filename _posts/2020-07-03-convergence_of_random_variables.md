@@ -24,7 +24,9 @@ $$
 
 as $n \rightarrow \infty$.
 
-Definition 2 Convergence in Distribution: $X_n$ converges to $X$ in distribution, written as $X_n \rightsquigarrow X$, if
+Definition 2 
+
+Convergence in Distribution: $X_n$ converges to $X$ in distribution, written as $X_n \rightsquigarrow X$, if
 
 $$
 \displaystyle \underset{n \rightarrow \infty}{\text{lim}} F_n(t) = F(t) \ \ \ \ \ (2)
@@ -35,9 +37,19 @@ at all $t$ for which $F$ is continuous.
 
 ## The Law of Large Numbers
 
-Let $X_1, X_2, \dotsc$ be \textsc{iid$ with mean $\mu = \mathbb{E}(X_1)} and variance $\sigma^2 = \mathbb{V}(X_1)$. Let sample mean be defined as $\overline{X}_n = (1/n)\sum_{i=1}^n X_i$. It can be shown that $\mathbb{E}(\overline{X}_n) = \mu$ and $\mathbb{V}(\overline{X}_n) = \sigma^2/n$.
+Let $X_1, X_2, \dotsc$ be $\textsc{iid}$ with mean $\mu = \mathbb{E}(X_1)$ and variance $\sigma^2 = \mathbb{V}(X_1)$. 
 
-Theorem 3 Weak Law of Large Numbers: If $X_1, \dotsc, X_n$ are \textsc{iid} random variables, then $\overline{X}_n \overset{P}{\longrightarrow} \mu$. 
+Let sample mean be defined as $\overline{X}_n = (1/n)\sum_{i=1}^n X_i$. 
+
+It can be shown that $\mathbb{E}(\overline{X}_n) = \mu$ and $\mathbb{V}(\overline{X}_n) = \sigma^2/n$.
+
+Theorem 3 
+
+Weak Law of Large Numbers: 
+
+If $X_1, \dotsc, X_n$ are $\textsc{iid}$ random variables, then 
+$\overline{X}_n \overset{P}{\longrightarrow} \mu $
+. 
 
 ## The Central Limit Theorem
 
