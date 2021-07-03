@@ -17,7 +17,7 @@ $$
 \displaystyle RSS = \sum_{t=1}^T (y_t - x_t^T b)^2 \ \ \ \ \ (2)
 $$
 
-The OLS estimate of $\beta}, b, is given by:
+The OLS estimate of $\beta$, $b$, is given by:
 
 $$
 \displaystyle b = \bigg(\frac{1}{T}\sum_{t=1}^T x_tx_t^T \bigg)^{\!-1} \!\!\cdot\, \frac{1}{T}\sum_{t=1}^n x_ty_t. \ \ \ \ \ (3)
@@ -33,7 +33,7 @@ $$
 $$
 \displaystyle 
 y= \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_T \end{bmatrix},
-\quad x= \begin{bmatrix} x_1^T \\ x_2^T \\ \vdots \\ x_T^T \end{bmatrix},
+\quad X= \begin{bmatrix} x_1^T \\ x_2^T \\ \vdots \\ x_T^T \end{bmatrix},
 \quad u= \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_T \end{bmatrix}. \ \ \ \ \ (5)
 $$
 
