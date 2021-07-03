@@ -324,31 +324,5 @@ $$
 \displaystyle t = \frac{{(b_i - \beta_i^0)} / $\sqrt{\sigma^2 \xi^{ii}}}}{\sqrt{s^2 / \sigma^2 }} \ \ \ \ \ (45)
 $$
 
-Thus the numerator is N(0, 1) and the denominator is the square root of a chi-square distribution with (T – k) degrees of freedom. This gives a t-distribution to the variable on the left side.
-
-## F Tests about $\beta$ Under Above Assumptions
-
-To generalize what we did for t tests, consider that we have a matrix $R$ that represents the restrictions we want to impose on $\beta$, that is $R\beta$ gives a vector of the hypothesis that we want to test. Thus,
-
-$$
-\displaystyle H_0 \colon R\beta = r \ \ \ \ \ (46)
-$$
-
-Since,
-
-$$
-\displaystyle b \sim N(\beta, \sigma^2(X^TX)^{-1}). \ \ \ \ \ (47)
-$$
-
-Thus, under $H_0},
-
-$$
-\displaystyle Rb \sim N(r, \sigma^2R(X^TX)^{-1}R^T). \ \ \ \ \ (48)
-$$
-
-Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma}, then $z^T\Sigma^{-1} z \sim \chi^2(n)$.
-
-Applying the above theorem to the $Rb - r$ vector, we have,
-
 
 
