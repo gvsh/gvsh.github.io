@@ -318,12 +318,6 @@ $$
 \displaystyle \frac{b_i - \beta_i^0}{\sqrt{\sigma^2 \xi^{ii}}} \sim N(0, 1). \ \ \ \ \ (44)
 $$
 
-Thus,
-
-$$
-\displaystyle 
-t = \frac{{(b_i - \beta_i^0)} / {\sqrt{\sigma^2 \xi^{ii}}}}{\sqrt{s^2 / \sigma^2 }} \ \ \ \ \ (45)
-$$
 
 
 
