@@ -359,13 +359,14 @@ $$
 \displaystyle b \sim N(\beta, \sigma^2(X^TX)^{-1}). \ \ \ \ \ (47)
 $$
 
-Thus, under $H_0},
+Thus, under $H_0$,
 
 $$
 \displaystyle Rb \sim N(r, \sigma^2R(X^TX)^{-1}R^T). \ \ \ \ \ (48)
 $$
 
-Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma}, then $z^T\Sigma^{-1} z \sim \chi^2(n)$.
+Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma$, then 
+$ z ^ T \Sigma ^ {-1} z \sim \chi^2(n)$.
 
 Applying the above theorem to the $Rb - r$ vector, we have,
 
