@@ -9,7 +9,7 @@ $$
 
 In this article, we will study the estimation and hypothesis testing of $\beta$ when $x_t$ is deterministic and $u_t$ is i.i.d. Gaussian.
 
-1. The Algebra of Linear Regression
+## The Algebra of Linear Regression
 
 Given a sample of T values of $y_t$ and the vector $x_t$, the ordinary least squares (OLS) estimate of $\beta$, denoted as $b$, is the value of $\beta$ which minimizes the residual sum of squares (RSS).
 
@@ -106,7 +106,7 @@ $$
 $$
 
 
-2. Assumptions on X and u
+## Assumptions on X and u
 
 We shall assume that
 
@@ -139,7 +139,7 @@ $$
 
 Thus b is unbiased and is a linear function of y.
 
-2.2. Distribution of Estimated b Under Above Assumptions
+## Distribution of Estimated b Under Above Assumptions
 
 As u is Gaussian,
 
@@ -153,7 +153,7 @@ $$
 \displaystyle b \sim N(\beta, \sigma^2(X^TX)^{-1}). \ \ \ \ \ (22)
 $$
 
-2.3. Properties of Estimated Sample Variance Under Above Assumptions
+## Properties of Estimated Sample Variance Under Above Assumptions
 
 The OLS estimate of variance of u, $\sigma^2$ is given by:
 
