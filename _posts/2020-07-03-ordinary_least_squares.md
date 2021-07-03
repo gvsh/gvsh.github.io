@@ -106,3 +106,149 @@ $$
 $$
 
 
+2. Assumptions on X and u
+
+We shall assume that
+
+- X will be deterministic
+
+- $u_t$ is i.i.d with mean 0 and variance $\sigma^2}.
+
+- $u_t$ is Gaussian.
+
+## Properties of Estimated $b$ Under Above Assumptions
+
+Since,
+
+$$
+\displaystyle b = (X^TX)^{-1}X^Ty = (X^TX)^{-1}X^T(X\beta + u) = \beta + (X^TX)^{-1}X^Tu. \ \ \ \ \ (18)
+$$
+
+Taking expectations of both sides, we have,
+
+
+$$
+\displaystyle \mathop{\mathbb E}(b) = \beta + (X^TX)^{-1}X^T\mathop{\mathbb E}(u) = \beta. \ \ \ \ \ (19)
+$$
+
+And the variance covariance matrix is given by,
+
+$$
+\displaystyle \mathop{\mathbb E}[(b - \beta)(b - \beta)^T] = \mathop{\mathbb E}[((X^TX)^{-1}X^Tu)((X^TX)^{-1}X^Tu)^T] = \sigma^2(X^TX)^{-1}. \ \ \ \ \ (20)
+$$
+
+Thus b is unbiased and is a linear function of y.
+
+2.2. Distribution of Estimated b Under Above Assumptions
+
+As u is Gaussian,
+
+$$
+\displaystyle b = \beta + (X^TX)^{-1}X^Tu. \ \ \ \ \ (21)
+$$
+
+implies that b is also Gaussian.
+
+$$
+\displaystyle b \sim N(\beta, \sigma^2(X^TX)^{-1}). \ \ \ \ \ (22)
+$$
+
+2.3. Properties of Estimated Sample Variance Under Above Assumptions
+
+The OLS estimate of variance of u, $\sigma^2$ is given by:
+
+$$
+\displaystyle s^2 = RSS / (T - k) = {\hat u}^T\hat u / (T - k) = u^TM_X^TM_Xu / (T - k) = u^TM_Xu / (T - k). \ \ \ \ \ (23)
+$$
+
+Since {M_X$ is a projection matrix and is symmetric and idempotent, it can be written as:
+
+$$
+\displaystyle M_X = P\Lambda P^T. \ \ \ \ \ (24)
+$$
+
+where
+
+$$
+\displaystyle P P^T = I_T. \ \ \ \ \ (25)
+$$
+
+and $\Lambda$ is a diagonal matrix with eigenvalues of $M_X$ on the diagonal.
+
+Since,
+
+$$
+\displaystyle M_XX = 0. \ \ \ \ \ (26)
+$$
+
+that is, since the two spaces that they represent are orthogonal to each other, it follows that:
+
+$$
+\displaystyle M_Xv = 0. \ \ \ \ \ (27)
+$$
+
+whenever v is a column of X. Since we assume X to be of full rank, there are k such vectors and their eigenvalue is the right hand side, which is 0.
+
+Also since
+
+$$
+\displaystyle M_X = I_T - X(X^TX)^{-1}X^T. \ \ \ \ \ (28)
+$$
+
+Thus, it follows that
+
+$$
+\displaystyle M_Xv = v. \ \ \ \ \ (29)
+$$
+
+whenever v is orthogonal to X. Since there are (T – k) such vectors, $M_X$ has (T – k) eigenvectors with eigenvalue 1.
+
+Thus $\Lambda$ has k zeroes and (T – k) 1s on the diagonal.
+
+$$
+\displaystyle u^TM_Xu = u^TP\Lambda P^Tu. \ \ \ \ \ (30)
+$$
+
+Let
+
+$$
+\displaystyle w = P^Tu \ \ \ \ \ (31)
+$$
+
+Then,
+
+$$
+\displaystyle u^TM_Xu = u^TP\Lambda P^Tu = w^T\Lambda w = w_1^2 \lambda_1 + w_2^2 \lambda_2 + \dots + w_T^2 \lambda_T. \ \ \ \ \ (32)
+$$
+
+$$
+\displaystyle u^TM_Xu = w_1^2 \lambda_1 + w_2^2 \lambda_2 + \dots + w_{T - k}^2 \lambda_{T - k}. \ \ \ \ \ (33)
+$$
+
+As these $\lambda}s are all unity, we have:
+
+$$
+\displaystyle u^TM_Xu = w_1^2 + w_2^2 + \dots + w_{T - k}^2 . \ \ \ \ \ (34)
+$$
+
+Also,
+
+$$
+\displaystyle \mathop{\mathbb E}(w^Tw) = \mathop{\mathbb E}(P^Tu u^T P) = \sigma^2I_T. \ \ \ \ \ (35)
+$$
+
+Thus, elements of w are uncorrelated with each other, have mean 0 and variance $\sigma^2$.
+
+Since each w has expectation of $\sigma^2},
+
+$$
+\displaystyle \mathop{\mathbb E}(u^TM_Xu) = (T - k)\sigma^2. \ \ \ \ \ (36)
+$$
+
+Hence,
+
+$$
+\displaystyle \mathop{\mathbb E}(s^2) = \sigma^2. \ \ \ \ \ (37)
+$$
+
+
