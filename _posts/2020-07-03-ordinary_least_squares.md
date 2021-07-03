@@ -52,3 +52,54 @@ $$
 $$
 
 where $M_X$ is defined as:
+
+
+$M_X$ is a projection matrix. Hence it is symmetric and idempotent.
+
+$$
+\displaystyle M_X = M_X^T. \ \ \ \ \ (9)
+$$
+
+$$
+\displaystyle M_XM_X = M_X. \ \ \ \ \ (10)
+$$
+
+
+Since $M_X$ is the projection matrix for the space orthogonal to $X},
+
+$$
+\displaystyle M_X^TX = M_XX = 0. \ \ \ \ \ (11)
+$$
+
+Thus, we can verify that the sample residuals are orthogonal to $X$.
+
+$$
+\displaystyle u^TX = y^TM_X^TX = 0. \ \ \ \ \ (12)
+$$
+
+The sample residual is constructed from the sample estimate of $\beta$ which is $b$. The population residual is a hypothetical construct based on the true population value of $\beta$.
+
+$$
+\displaystyle u_t = y_t - x_t^T \beta. \ \ \ \ \ (13)
+$$
+
+$$
+\displaystyle \hat u_t = y_t - x_t^T b. \ \ \ \ \ (14)
+$$
+
+$$
+\displaystyle \hat u = y - Xb = [I_T - X(X^TX)^{-1}X^T]y = M_Xy = M_XX b + u. \ \ \ \ \ (15)
+$$
+
+$$
+\displaystyle b = (X^TX)^{-1}X^Ty = (X^TX)^{-1}X^T(X\beta + u) = \beta + (X^TX)^{-1}X^Tu. \ \ \ \ \ (16)
+$$
+
+
+The fit of OLS is described in terms of $R_u^2}, which is defined as the ratio of squares of the fitted values ({x_t^Tb)$ to the observed values of $y$.
+
+$$
+\displaystyle R_u^2 = \frac{\sum_{t=1}^T b^Tx_tx_t^Tb}{\sum_{t=1}^T y_t^2} = \frac{b^TX^TXb}{y^Ty}. \ \ \ \ \ (17)
+$$
+
+
