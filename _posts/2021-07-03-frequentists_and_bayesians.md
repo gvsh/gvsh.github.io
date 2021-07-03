@@ -1,5 +1,8 @@
 #
 
+TOC
+{:toc}
+
 # Frequentists and Bayesians
 
 ## Interpretations of Probability
