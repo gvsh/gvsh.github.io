@@ -14,17 +14,14 @@ This states that the distribution of the sample mean converges in distribution t
 ## Types of Convergence
 
 
-1. Introduction
+### Introduction
 
 There are two main ideas in this article.
 
-Law of Large Numbers:
-This states that the mean of the sample $\overline{X}_n$ converges in probability to the distribution mean $\mu$ as $n$ increases.
+- Law of Large Numbers: This states that the mean of the sample $\overline{X}_n$ converges in probability to the distribution mean $\mu$ as $n$ increases.
+- Central Limit Theorem: This states that the distribution of the sample mean converges in distribution to a normal distribution as $n$ increases.
 
-Central Limit Theorem:
-This states that the distribution of the sample mean converges in distribution to a normal distribution as $n$ increases.
-
-2. Types of Convergence
+#### Types of Convergence
 
 Let $X_1, \dotsc, X_n$ be a sequence of random variables with distributions $F_n$ and let $X$ be a random variable with distribution $F$.
 
@@ -40,13 +37,13 @@ Definition 2 Convergence in Distribution: $X_n$ converges to $X$ in distribution
 
 at all $t$ for which $F$ is continuous. 
 
-3. The Law of Large Numbers
+## The Law of Large Numbers
 
 Let $X_1, X_2, \dotsc$ be \textsc{iid$ with mean $\mu = \mathbb{E}(X_1)} and variance $\sigma^2 = \mathbb{V}(X_1)$. Let sample mean be defined as $\overline{X}_n = (1/n)\sum_{i=1}^n X_i$. It can be shown that $\mathbb{E}(\overline{X}_n) = \mu$ and $\mathbb{V}(\overline{X}_n) = \sigma^2/n$.
 
 Theorem 3 Weak Law of Large Numbers: If $X_1, \dotsc, X_n$ are \textsc{iid} random variables, then $\overline{X}_n \overset{P}{\longrightarrow} \mu$. 
 
-4. The Central Limit Theorem
+## The Central Limit Theorem
 
 The law of large numbers says that the distribution of the sample mean, $\overline{X}_n$, piles up near the true distribution mean, $\mu$. The central limit theorem further adds that the distribution of the sample mean approaches a Normal distribution as n gets large. It even gives the mean and the variance of the normal distribution.
 
@@ -66,7 +63,7 @@ Theorem 6 Assuming the conditions of the CLT,
 
 \displaystyle \frac{\sqrt{n}(\overline{X}_n - \mu)}{S_n} \approx N(0,1). \ \ \ \ \ (6)
 
-5. The Delta Method
+## The Delta Method
 
 Theorem 7 Let $Y_n$ be a random variable with conditions of CLT met, and let $g(x)$ be a differentiable function with $g'(\mu) \neq 0$. Then,
 
