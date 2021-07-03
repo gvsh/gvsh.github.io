@@ -46,7 +46,7 @@ The first few Legendre polynomials are:
 
 9: $ \frac 1 {128} (12155x^9-25740x^7+18018x^5-4620x^3+315x) $
 
-10: { \frac1{256} (46189x^{10}-109395x^8+90090x^6-30030x^4+3465x^2-63)$
+10: $ \frac1{256} (46189x^{10}-109395x^8+90090x^6-30030x^4+3465x^2-63)$
 
 A more complicated definition of these polynomials is that they are the solution to the following differential equation (Legendre’s differential equation):
 
