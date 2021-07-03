@@ -147,13 +147,13 @@ $$
 \displaystyle \frac{\hat { \theta } - \theta }{\widehat{\textsf{se}} } \rightsquigarrow N(0, 1). \ \ \ \ \ (16)
 $$
 
-Then, the size {\alpha} the Wald Test is: reject {H_0} if {|W| > z_{\alpha/2}} where
+Then, the size $\alpha$ the Wald Test is: reject $H_0$ if $|W| > z_{\alpha/2}$ where
 
 $$
 \displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
 $$
 
-Theorem 12 Asymptotically, the Wald test has size {\alpha}.
+Theorem 12 Asymptotically, the Wald test has size $\alpha$.
 
 $$
 \displaystyle size \\ = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)) \\ = \underset{\theta \in \Theta_0}{\text{sup}}\mathbb{P}_{\theta}(X \in R) \\ = \mathbb{P}_{\theta_0}(X \in R) \\ = \mathbb{P}_{\theta_0}(|W| > z_{\alpha/2}) \\ = \mathbb{P}_{\theta_0}\left(\left| \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}\right| > z_{\alpha/2}\right) \\ \rightarrow \mathbb{P}(|Z| > z_{\alpha/2}) \\ = \alpha. \ \ \ \ \ (18)
