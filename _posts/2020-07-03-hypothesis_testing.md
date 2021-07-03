@@ -147,7 +147,11 @@ $$
 \displaystyle \frac{\hat { \theta } - \theta }{\widehat{\textsf{se}} } \rightsquigarrow N(0, 1). \ \ \ \ \ (16)
 $$
 
-Then, the size $\alpha$ the Wald Test is: reject $H_0$ if $|W| > z_{\alpha/2}$ where
+Then, the size $\alpha$ the Wald Test is: 
+reject $H_0$ if 
+$|W| > z_{\alpha/2}$ 
+
+where
 
 $$
 \displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
