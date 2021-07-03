@@ -41,10 +41,10 @@ We need to consider the Type I and Type II error probabilities to draw such conc
 
 ## Neyman-Pearson Theory
 
-The main contribution of Neyman-Pearson hypothesis testing framework (they named it to distinguish it from the inductive approach of Fisher’s significance testing) is the introduction of the
+The main contribution of Neyman-Pearson hypothesis testing framework (they named it to distinguish it from the inductive approach of Fisher’s significance testing) is the introduction of 
 
-    probabilities of committing two kinds of errors, false rejection (Type I error), called {\alpha}, and false acceptance (Type II error), called $\beta$, of the null hypothesis.
-    power of a statistical test. It is defined as the probability of rejecting a false null hypothesis. It is equal to $1 - \beta$. 
+- the probabilities of committing two kinds of errors, false rejection (Type I error), called $\alpha$, and false acceptance (Type II error), called $\beta$, of the null hypothesis.
+- power of a statistical test. It is defined as the probability of rejecting a false null hypothesis. It is equal to $1 - \beta$. 
 
 Fisher’s theory relied on the rejection of null hypothesis based on the data, assuming null hypothesis to be true. In contrast, the Neyman-Pearson approach provides rules to make decisions to choose the between the two hypothesis.
 
