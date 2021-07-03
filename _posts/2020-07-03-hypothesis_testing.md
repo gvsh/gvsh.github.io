@@ -18,17 +18,6 @@ $$
 \displaystyle H_0 \colon \theta \in \Theta_0 \\ H_1 \colon \theta \in \Theta_1. \ \ \ \ \ (1)
 $$
 
-# Hypothesis Testing and p-values
-
-
-Introduction
-
-Hypothesis testing is a method of inference.
-
-Definition 1 A hypothesis is a statement about a population parameter. 
-
-Definition 2 Null and Alternate Hypothesis: We partition the parameter space $\Theta$ into two disjoint sets $\Theta_0$ and $\Theta_1$ and we wish to test:
-
 \displaystyle H_0 \colon \theta \in \Theta_0 \\ H_1 \colon \theta \in \Theta_1. \ \ \ \ \ (1)
 
 We call $H_0$ the null hypothesis and $H_1$ the alternate hypothesis. 
@@ -39,39 +28,55 @@ We accept $H_0$ when $X$ does not belong to $R$ and reject when it does.
 
 Hypothesis testing is a legal trial. We accept $H_0$ unless the evidence suggests otherwise. Falsely sentencing the accused when he is not guilty is type I error and letting the accused go free when he is infact guilty is a type II error.
 
-Definition 4 Power Function of a Test: It is the probability of $X$ being in the rejection region, expressed as a function of $\theta$.
+Definition 4 
+Power Function of a Test: It is the probability of $X$ being in the rejection region, expressed as a function of $\theta$.
 
+$$
 \displaystyle \beta(\theta) = \mathbb{P}_{\theta}(X \in R) \ \ \ \ \ (2)
-Definition 5 Size of a Test: It is the maximum of the power function of a test when $\theta$ is restricted to the $\Theta_0$ parameter space.
+$$
+
+Definition 5 
+Size of a Test: It is the maximum of the power function of a test when $\theta$ is restricted to the $\Theta_0$ parameter space.
 
 \displaystyle \alpha = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)). \ \ \ \ \ (3)
-Definition 6 Level $\alpha$ Test: A test with size less than or equal to $\alpha$ is said to be a level $\alpha$ test. 
+Definition 6 
+Level $\alpha$ Test: A test with size less than or equal to $\alpha$ is said to be a level $\alpha$ test. 
 
-Definition 7 Simple Hypothesis: A hypothesis of the form $\theta = \theta_0$ is called a simple hypothesis. 
+Definition 7 
+Simple Hypothesis: A hypothesis of the form $\theta = \theta_0$ is called a simple hypothesis. 
 
-Definition 8 Composite Hypothesis: A hypothesis of the form $\theta < \theta_0$ or $\theta > \theta_0$ is called a composite hypothesis. 
+Definition 8 
+Composite Hypothesis: A hypothesis of the form $\theta < \theta_0$ or $\theta > \theta_0$ is called a composite hypothesis. 
 
-Definition 9 Two Sided Test: A test of the form
+Definition 9 
+Two Sided Test: A test of the form
 
+$$
 \displaystyle H_0 \colon \theta = \theta_0 \\ H_1 \colon \theta \neq \theta_0. \ \ \ \ \ (4)
-
+$$
 is called a two-sided test. 
 
-Definition 10 One Sided Test: A test of the form
+Definition 10 
+One Sided Test: A test of the form
 
+$$
 \displaystyle H_0 \colon \theta < \theta_0 \\ H_1 \colon \theta > \theta_0. \ \ \ \ \ (5)
+$$
 
 or
+$$
 \displaystyle H_0 \colon \theta > \theta_0 \\ H_1 \colon \theta < \theta_0. \ \ \ \ \ (6)
-
+$$
 is called a one-sided test. 
 
-Example 1 (Hypothesis Testing on Normal Distribution:) Let $X_1, \dotsc, X_n \sim N(\mu, \sigma^2)$ where $\sigma$ is known. We want to test $H_0 \colon \mu \leq 0$ versus $H_1 \colon \mu > 0$. Hence $\Theta_0 = (- \infty, 0]$ and $\Theta_1 = ( 0, \infty)$.
+Example 1 
+Hypothesis Testing on Normal Distribution: 
+Let $X_1, \dotsc, X_n \sim N(\mu, \sigma^2)$ where $\sigma$ is known. We want to test $H_0 \colon \mu \leq 0$ versus $H_1 \colon \mu > 0$. Hence $\Theta_0 = (- \infty, 0]$ and $\Theta_1 = ( 0, \infty)$.
 
 Consider the test:
-
+$$
 \displaystyle \text{reject } H_0 \text{ if } T > c \ \ \ \ \ (7)
-
+$$
 where $T = \overline{X}$.
 
 Then the rejection region is
