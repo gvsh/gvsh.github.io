@@ -53,6 +53,9 @@ $$
 
 where $M_X$ is defined as:
 
+$$
+\displaystyle M_X = [I_T - X(X^TX)^{-1}X^T]. \ \ \ \ \ (8)
+$$
 
 $M_X$ is a projection matrix. Hence it is symmetric and idempotent.
 
