@@ -11,7 +11,7 @@ In this article, we will study the estimation and hypothesis testing of $\beta$ 
 
 1. The Algebra of Linear Regression
 
-Given a sample of T values of $y_t$ and the vector $x_t}, the ordinary least squares (OLS) estimate of $\beta}, denoted as $b}, is the value of $\beta$ which minimizes the residual sum of squares (RSS).
+Given a sample of T values of $y_t$ and the vector $x_t$, the ordinary least squares (OLS) estimate of $\beta$, denoted as $b$, is the value of $\beta$ which minimizes the residual sum of squares (RSS).
 
 $$
 \displaystyle RSS = \sum_{t=1}^T (y_t - x_t^T b)^2 \ \ \ \ \ (2)
