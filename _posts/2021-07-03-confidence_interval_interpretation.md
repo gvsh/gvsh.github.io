@@ -10,7 +10,7 @@ A sample taken from a population cannot make probability statements about $\thet
 
 The 95 in a 95 percent confidence interval only serves to give us the percentage of time the confidence interval would be right, across trials of all possible experiments, including the ones which are not about this $\theta$ parameter that is being discussed.
 
-Confidence Interval MeaningConfidence Interval Meaning
+Confidence Interval Meaning:
 
 As an example, on day 1, you collect data and construct a 95 percent confidence interval for a parameter $\theta_1$.
 
