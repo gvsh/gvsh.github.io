@@ -111,9 +111,7 @@ $$
 We shall assume that
 
 - X will be deterministic
-
 - $u_t$ is i.i.d with mean 0 and variance $\sigma^2}.
-
 - $u_t$ is Gaussian.
 
 ## Properties of Estimated $b$ Under Above Assumptions
@@ -293,7 +291,7 @@ $$
 
 Since b and $\hat u$ are independent, b and $s^2$ are also independent.
 
-2.5. t Tests about $\beta$ Under Above Assumptions
+## t Tests about $\beta$ Under Above Assumptions
 
 We wish to test the hypothesis that the ith element of $\beta}, $\beta_i}, is some particular value $\beta_i^0$.
 
