@@ -2,7 +2,7 @@
 
 # Interpretation of Confidence Intervals
 
-In frequentist statistics (which is one the used by journals and academia), {\theta} is a fixed quantity, not a random variable.
+In frequentist statistics (which is one the used by journals and academia), $\theta$ is a fixed quantity, not a random variable.
 
 Hence, a confidence interval is not a probability statement about {\theta}.
 
