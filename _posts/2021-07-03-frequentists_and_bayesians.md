@@ -1,6 +1,6 @@
 #
 
-TOC
+1. TOC
 {:toc}
 
 # Frequentists and Bayesians
