@@ -1,5 +1,6 @@
 # Frequentists and Bayesians
 
+Table of Contents:
 1. TOC
 {:toc}
 
