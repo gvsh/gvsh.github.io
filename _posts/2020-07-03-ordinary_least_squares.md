@@ -31,7 +31,10 @@ $$
 $$
 
 $$
-\displaystyle \bold{y}= \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_T \end{bmatrix},\quad \bold{x}= \begin{bmatrix} x_1^T \\ x_2^T \\ \vdots \\ x_T^T \end{bmatrix},\quad \bold{u}= \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_T \end{bmatrix}. \ \ \ \ \ (5)
+\displaystyle 
+\bold{y}= \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_T \end{bmatrix},
+\quad \bold{x}= \begin{bmatrix} x_1^T \\ x_2^T \\ \vdots \\ x_T^T \end{bmatrix},
+\quad \bold{u}= \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_T \end{bmatrix}. \ \ \ \ \ (5)
 $$
 
 where $y$ is a $T \times 1$ vector, $X$ is a $T \times k$ matrix, $\beta$ is a $k \times 1$ vector and $u$ is a $T \times 1$ vector.
