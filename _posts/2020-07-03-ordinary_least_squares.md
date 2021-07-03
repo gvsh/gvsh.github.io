@@ -319,7 +319,7 @@ $$
 
 Thus the numerator is N(0, 1) and the denominator is the square root of a chi-square distribution with (T – k) degrees of freedom. This gives a t-distribution to the variable on the left side.
 
-2.6. F Tests about $\beta$ Under Above Assumptions
+## F Tests about $\beta$ Under Above Assumptions
 
 To generalize what we did for t tests, consider that we have a matrix $R$ that represents the restrictions we want to impose on $\beta$, that is $R\beta$ gives a vector of the hypothesis that we want to test. Thus,
 
@@ -339,11 +339,9 @@ $$
 \displaystyle Rb \sim N(r, \sigma^2R(X^TX)^{-1}R^T). \ \ \ \ \ (48)
 $$
 
-    Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma}, then $z^T\Sigma^{-1} z \sim \chi^2(n)$.
+Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma}, then $z^T\Sigma^{-1} z \sim \chi^2(n)$.
 
-     
-
-Applying the above theorem to the $Rb - r} vector, we have,
+Applying the above theorem to the $Rb - r$ vector, we have,
 
 $$
 \displaystyle (Rb - r)^T (\sigma^2R(X^TX)^{-1}R^T)^{-1}(Rb - r) \sim \chi^2 (m). \ \ \ \ \ (49)
@@ -366,10 +364,3 @@ $$
 In the above, the numerator is a $\chi^2(m)$ distribution divided by its degree of freedom and the denominator is a $\chi^2(T - k)$ distribution divided by its degree of freedom. Since b and $\hat u$ are independent, the numerator and denominator are also independent of each other.
 
 Hence, the variable on the left hand side has an exact $F(m , T - k)$ distribution under $H_0$.
-
-
-
-
-
-
-
