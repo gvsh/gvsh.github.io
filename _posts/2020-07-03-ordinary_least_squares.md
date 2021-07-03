@@ -252,3 +252,124 @@ $$
 $$
 
 
+
+
+
+## Distribution of Estimated Sample Variance Under Above Assumptions
+
+Since
+
+$$
+\displaystyle w = P^Tu \ \ \ \ \ (38)
+$$
+
+when u is Gaussian, w is also Gaussian.
+
+Then,
+
+$$
+\displaystyle u^TM_Xu = w_1^2 \lambda_1 + w_2^2 \lambda_2 + \dots + w_{T - k}^2 \lambda_{T - k}. \ \ \ \ \ (39)
+$$
+
+implies that $u^TM_Xu$ is the sum of squares of (T – k) independent $N(0, \sigma^2)$ random variables.
+
+Thus,
+
+$$
+\displaystyle RSS^2 / \sigma^2 = u^TM_Xu / \sigma^2 \sim \chi^2 ( T - k). \ \ \ \ \ (40)
+$$
+
+Also, b and $\hat u$ are uncorrelated, since,
+
+$$
+\displaystyle \mathop{\mathbb E}[\hat u(b - \beta)^T] = \mathop{\mathbb E}[M_Xu u^T X (X^TX)^{-1} = 0. \ \ \ \ \ (41)
+$$
+
+Since b and $\hat u$ are independent, b and $s^2$ are also independent.
+
+2.5. t Tests about $\beta$ Under Above Assumptions
+
+We wish to test the hypothesis that the ith element of $\beta}, $\beta_i}, is some particular value $\beta_i^0$.
+
+The t-statistic for testing this null hypothesis is
+
+$$
+\displaystyle t = \frac{b_i - \beta_i^0}{\hat \sigma_{b_i}} = \frac{b_i - \beta_i^0}{s (\xi^{ii})^2} \ \ \ \ \ (42)
+$$
+
+where $ \xi^{ii}$ denotes the ith column and ith row element of $(X^TX)^{-1}$ and $\hat \sigma_{b_i}$ is the standard error of the OLS estimate of the ith coefficient.
+
+Under the null hypothesis,
+
+$$
+\displaystyle b_i \sim N(\beta_i^0, \sigma^2 \xi^{ii}). \ \ \ \ \ (43)
+$$
+
+Thus,
+
+$$
+\displaystyle \frac{b_i - \beta_i^0}{\sqrt{\sigma^2 \xi^{ii}}} \sim N(0, 1). \ \ \ \ \ (44)
+$$
+
+Thus,
+
+$$
+\displaystyle t = \frac{{(b_i - \beta_i^0)} / $\sqrt{\sigma^2 \xi^{ii}}}}{\sqrt{s^2 / \sigma^2 }} \ \ \ \ \ (45)
+$$
+
+Thus the numerator is N(0, 1) and the denominator is the square root of a chi-square distribution with (T – k) degrees of freedom. This gives a t-distribution to the variable on the left side.
+
+2.6. F Tests about $\beta$ Under Above Assumptions
+
+To generalize what we did for t tests, consider that we have a matrix $R$ that represents the restrictions we want to impose on $\beta$, that is $R\beta$ gives a vector of the hypothesis that we want to test. Thus,
+
+$$
+\displaystyle H_0 \colon R\beta = r \ \ \ \ \ (46)
+$$
+
+Since,
+
+$$
+\displaystyle b \sim N(\beta, \sigma^2(X^TX)^{-1}). \ \ \ \ \ (47)
+$$
+
+Thus, under $H_0},
+
+$$
+\displaystyle Rb \sim N(r, \sigma^2R(X^TX)^{-1}R^T). \ \ \ \ \ (48)
+$$
+
+    Theorem 1 If $z$ is a $(n \times 1)$ vector with $z \sim N(0, \Sigma^2)$ and non singular $\Sigma}, then $z^T\Sigma^{-1} z \sim \chi^2(n)$.
+
+     
+
+Applying the above theorem to the $Rb - r} vector, we have,
+
+$$
+\displaystyle (Rb - r)^T (\sigma^2R(X^TX)^{-1}R^T)^{-1}(Rb - r) \sim \chi^2 (m). \ \ \ \ \ (49)
+$$
+
+Now consider,
+
+$$
+\displaystyle F = (Rb - r)^T (s^2R(X^TX)^{-1}R^T)^{-1}(Rb - r) / m. \ \ \ \ \ (50)
+$$
+
+where sigma has been replaced with the sample estimate s.
+
+Thus,
+
+$$
+\displaystyle F = \frac{[(Rb - r)^T (\sigma^2R(X^TX)^{-1}R^T)^{-1}(Rb - r)] / m}{[RSS / (T - k)]/ \sigma^2} \ \ \ \ \ (51)
+$$
+
+In the above, the numerator is a $\chi^2(m)$ distribution divided by its degree of freedom and the denominator is a $\chi^2(T - k)$ distribution divided by its degree of freedom. Since b and $\hat u$ are independent, the numerator and denominator are also independent of each other.
+
+Hence, the variable on the left hand side has an exact $F(m , T - k)$ distribution under $H_0$.
+
+
+
+
+
+
+
