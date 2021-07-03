@@ -18,7 +18,9 @@ $$
 \displaystyle H_0 \colon \theta \in \Theta_0 \\ H_1 \colon \theta \in \Theta_1. \ \ \ \ \ (1)
 $$
 
+$$
 \displaystyle H_0 \colon \theta \in \Theta_0 \\ H_1 \colon \theta \in \Theta_1. \ \ \ \ \ (1)
+$$ 
 
 We call $H_0$ the null hypothesis and $H_1$ the alternate hypothesis. 
 
@@ -37,8 +39,9 @@ $$
 
 Definition 5 
 Size of a Test: It is the maximum of the power function of a test when $\theta$ is restricted to the $\Theta_0$ parameter space.
-
+$$
 \displaystyle \alpha = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)). \ \ \ \ \ (3)
+$$
 Definition 6 
 Level $\alpha$ Test: A test with size less than or equal to $\alpha$ is said to be a level $\alpha$ test. 
 
@@ -80,33 +83,33 @@ $$
 where $T = \overline{X}$.
 
 Then the rejection region is
-
+$$
 \displaystyle R = \{(x_1, \dotsc, x_n) : \overline{X} > c \} \ \ \ \ \ (8)
-
+$$
 The power function of the test is
-
+$$
 \displaystyle \beta(\mu) = \mathbb{P}_{\mu}(X \in R) \\ = \mathbb{P}_{\mu}(\overline{X} > c) \\ = \mathbb{P}_{\mu}\left( \frac{\sqrt{n}(\overline{X} - \mu)}{\sigma} > \frac{\sqrt{n}(c - \mu)}{\sigma} \right) \\ = \mathbb{P}_{\mu}\left( Z > \frac{\sqrt{n}(c - \mu)}{\sigma} \right) \\ = 1 - \Phi\left(\frac{\sqrt{n}(c - \mu)}{\sigma}\right). \ \ \ \ \ (9)
-
+$$
 The size of the test is
-
+$$
 \displaystyle \text{size} = \underset{\mu \leq 0}{\text{sup}}(\beta(\mu)) \\ = \underset{\mu \leq 0}{\text{sup}}\left(1 - \Phi\left(\frac{\sqrt{n}(c - \mu)}{\sigma}\right)\right) \\ = \beta(0) \\ = 1 - \Phi\left(\frac{c\sqrt{n}}{\sigma}\right). \ \ \ \ \ (10)
-
+$$
 Equating with $\alpha$ we obtain
-
+$$
 \displaystyle \alpha = 1 - \Phi\left(\frac{c\sqrt{n}}{\sigma}\right). \ \ \ \ \ (11)
-
+$$
 Hence
-
+$$
 \displaystyle c = \frac{\sigma \thinspace \Phi^{-1}(1 - \alpha)}{\sqrt{n}}. \ \ \ \ \ (12)
-
+$$
 We reject when $\overline{X} > c$. For a test size of 95%
-
+$$
 \displaystyle c = \frac{1.96 \sigma}{\sqrt{n}}. \ \ \ \ \ (13)
-
+$$
 or we reject when
-
+$$
 \displaystyle \overline{X} > \frac{1.96 \sigma}{\sqrt{n}}. \ \ \ \ \ (14)
-
+$$
 2. The Wald Test
 
 Let $X_1, \dotsc, X_n$ be \textsc{iid} random variables with $\theta$ as a parameter of their distribution function $F_X(x; \theta)$. Let $\hat{\theta}$ be the estimate of $\theta$ and let $\widehat{\textsf{se}}$ be the standard deviation of the distribution of $\hat{\theta}$.
@@ -114,20 +117,49 @@ Let $X_1, \dotsc, X_n$ be \textsc{iid} random variables with $\theta$ as a param
 Definition 11 (The Wald Test)
 
 Consider testing a two-sided hypothesis:
-
+$$
 \displaystyle H_0 \colon \theta = \theta_0 \\ H_1 \colon \theta \neq \theta_0. \ \ \ \ \ (15)
-
+$$
 Assume that $\hat{\theta}$ has an asymptotically normal distribution.
-
+$$
 \displaystyle \frac{\hat { \theta } - \theta }{\widehat{\textsf{se}} } \rightsquigarrow N(0, 1). \ \ \ \ \ (16)
-
+$$
 Then, the size {\alpha} the Wald Test is: reject {H_0} if {|W| > z_{\alpha/2}} where
-
+$$
 \displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
+$$
+Theorem 12 Asymptotically, the Wald test has size {\alpha}.
+$$
+\displaystyle size \\ = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)) \\ = \underset{\theta \in \Theta_0}{\text{sup}}\mathbb{P}_{\theta}(X \in R) \\ = \mathbb{P}_{\theta_0}(X \in R) \\ = \mathbb{P}_{\theta_0}(|W| > z_{\alpha/2}) \\ = \mathbb{P}_{\theta_0}\left(\left| \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}\right| > z_{\alpha/2}\right) \\ \rightarrow \mathbb{P}(|Z| > z_{\alpha/2}) \\ = \alpha. \ \ \ \ \ (18)
+$$
+Example 2 Two experiments are conducted to test two prediction algorithms.
+
+The prediction algorithms are used to predict the outcomes {n} and {m} times, respectively, and have a probability of predicting with success as {p_1} and {p_2}, respectively.
+
+Let {\delta = p_1 - p_2}.
+
+Consider testing a two-sided hypothesis:
+$$
+\displaystyle H_0 \colon \delta = 0 \\ H_1 \colon \delta \neq 0. \ \ \ \ \ (19)
+$$
+3. The Likelihood Ratio Test
+
+This test can be used to test vector valued parameters as well.
+
+Definition 13 The likelihood ratio test statistic for testing {H_0 \colon \theta \in \Theta_0} versus {H_1 \colon \theta \in \Theta_1} is
+$$
+\displaystyle \lambda(x) = \frac{ \underset{\theta \in \Theta_0}{\text{sup}} (L( \theta|\mathbf{x} )) }{ \underset{\theta \in \Theta}{\text{sup}} (L( \theta|\mathbf{x} )) }. \ \ \ \ \ (20)
+$$
+
+$$
+\displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
+$$
 
 Theorem 12 Asymptotically, the Wald test has size {\alpha}.
 
+$$
 \displaystyle size \\ = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)) \\ = \underset{\theta \in \Theta_0}{\text{sup}}\mathbb{P}_{\theta}(X \in R) \\ = \mathbb{P}_{\theta_0}(X \in R) \\ = \mathbb{P}_{\theta_0}(|W| > z_{\alpha/2}) \\ = \mathbb{P}_{\theta_0}\left(\left| \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}\right| > z_{\alpha/2}\right) \\ \rightarrow \mathbb{P}(|Z| > z_{\alpha/2}) \\ = \alpha. \ \ \ \ \ (18)
+$$
 
 Example 2 Two experiments are conducted to test two prediction algorithms.
 
@@ -136,8 +168,9 @@ The prediction algorithms are used to predict the outcomes {n} and {m} times, re
 Let {\delta = p_1 - p_2}.
 
 Consider testing a two-sided hypothesis:
-
+$$
 \displaystyle H_0 \colon \delta = 0 \\ H_1 \colon \delta \neq 0. \ \ \ \ \ (19)
+$$
 
 3. The Likelihood Ratio Test
 
@@ -145,31 +178,7 @@ This test can be used to test vector valued parameters as well.
 
 Definition 13 The likelihood ratio test statistic for testing {H_0 \colon \theta \in \Theta_0} versus {H_1 \colon \theta \in \Theta_1} is
 
+$$
 \displaystyle \lambda(x) = \frac{ \underset{\theta \in \Theta_0}{\text{sup}} (L( \theta|\mathbf{x} )) }{ \underset{\theta \in \Theta}{\text{sup}} (L( \theta|\mathbf{x} )) }. \ \ \ \ \ (20)
-
-
-
-\displaystyle W = \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}. \ \ \ \ \ (17)
-
-Theorem 12 Asymptotically, the Wald test has size {\alpha}.
-
-\displaystyle size \\ = \underset{\theta \in \Theta_0}{\text{sup}}(\beta(\theta)) \\ = \underset{\theta \in \Theta_0}{\text{sup}}\mathbb{P}_{\theta}(X \in R) \\ = \mathbb{P}_{\theta_0}(X \in R) \\ = \mathbb{P}_{\theta_0}(|W| > z_{\alpha/2}) \\ = \mathbb{P}_{\theta_0}\left(\left| \frac{\hat { \theta } - \theta_0 }{\widehat{\textsf{se}}}\right| > z_{\alpha/2}\right) \\ \rightarrow \mathbb{P}(|Z| > z_{\alpha/2}) \\ = \alpha. \ \ \ \ \ (18)
-
-Example 2 Two experiments are conducted to test two prediction algorithms.
-
-The prediction algorithms are used to predict the outcomes {n} and {m} times, respectively, and have a probability of predicting with success as {p_1} and {p_2}, respectively.
-
-Let {\delta = p_1 - p_2}.
-
-Consider testing a two-sided hypothesis:
-
-\displaystyle H_0 \colon \delta = 0 \\ H_1 \colon \delta \neq 0. \ \ \ \ \ (19)
-
-3. The Likelihood Ratio Test
-
-This test can be used to test vector valued parameters as well.
-
-Definition 13 The likelihood ratio test statistic for testing {H_0 \colon \theta \in \Theta_0} versus {H_1 \colon \theta \in \Theta_1} is
-
-\displaystyle \lambda(x) = \frac{ \underset{\theta \in \Theta_0}{\text{sup}} (L( \theta|\mathbf{x} )) }{ \underset{\theta \in \Theta}{\text{sup}} (L( \theta|\mathbf{x} )) }. \ \ \ \ \ (20)
+$$
 
