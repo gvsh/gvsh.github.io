@@ -21,7 +21,7 @@ Any polynomial $P$, which is not a multiple of $x^3 - x - 1$ can then be written
 
 In creating quotient fields the operation on fields and the equivalence relation are defined such that if $P$ and $P^\prime$ belong to the same equivalence class and so do $Q$ and $Q^\prime$, with $P \ne Q$, then $P + Q$ and $P^\prime + Q^\prime$ belong to the same equivalence class as does $PQ$ and $P^\prime Q^\prime$.
 
-3. Quotient Groups
+## Quotient Groups
 
 We want to extend what we did while creating a field from the ring of polynomials to create a new group from two given groups.
 
