@@ -35,7 +35,7 @@ A program in the above language is a term built up from the forms given in the g
 
 if false then 0 else 1
 
-{\triangleright} 1
+${\triangleright$ 1
 
 1. Syntax
 
@@ -43,7 +43,7 @@ The grammar above is a way to specify the syntax of the language. One other way 
 
 Definition 1 Terms, Inductively: The set of terms is the smallest set $ \mathcal{T} $ such that
 
-{true, false, 0$ $\subseteq \mathcal{T}}.
+$true, false, 0$ $\subseteq \mathcal{T}$.
 
 if $t_1$ $\in \mathcal{T}$ then succ({t_1}), pred({t_1}), iszero({t_1}) $\subseteq \mathcal{T}}.
 
