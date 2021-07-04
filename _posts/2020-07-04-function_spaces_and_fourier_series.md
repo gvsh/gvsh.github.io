@@ -28,6 +28,8 @@ Length squared:
 $$
 \displaystyle \lVert v \rVert^2 = v_1^2 + $v_2}^2 + \dots \ \ \ \ \ (1)
 $$
+
+
 Inner products and orthogonality are defined just be letting $n \rightarrow \infty$ in the $R^n$ definitions of these quantities.
 
 $$
