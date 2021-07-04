@@ -35,7 +35,7 @@ A program in the above language is a term built up from the forms given in the g
 
 if false then 0 else 1
 
-${\triangleright$ 1
+$\triangleright$ 1
 
 1. Syntax
 
