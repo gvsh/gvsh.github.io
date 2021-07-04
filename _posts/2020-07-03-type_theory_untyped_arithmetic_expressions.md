@@ -106,7 +106,7 @@ $$
 
 
 $$
-\displaystyle \mathcal{S}_{i + 1 } = {true, false, 0\} \\ \cup \quad {succ(t_1), \thickspace pred(t_1), \thickspace iszero(t_1) \thickspace | \thickspace t_1 \thickspace \in \mathcal{S}_i} \\ \cup \quad {if \thickspace t_1 \thickspace then \thickspace t_2 \thickspace else \thickspace t_3 }\thickspace | \thickspace t_1, \thickspace t_2, \thickspace t3 \in \mathcal{S}_i}. \ \ \ \ \ (9)
+\displaystyle \mathcal{S}_{i + 1 } = {true, false, 0\} \\ \cup \quad {succ(t_1), \ pred(t_1), \ iszero(t_1) \ | \ t_1 \ \in \mathcal{S}_i} \\ \cup \quad {if \ t_1 \ then \ t_2 \ else \ t_3 }\ | \ t_1, \ t_2, \ t3 \in \mathcal{S}_i}. \ \ \ \ \ (9)
 $$
 
 
@@ -155,7 +155,7 @@ Consider a language with grammar as below:
 Syntax:
 
 $$
-\displaystyle t = \thickspace \text{terms} \\ = true \thickspace \text{constant true} \\ = false \thickspace \text{constant false} \\ = if \thickspace t \thickspace then \thickspace t \thickspace else \thickspace t \thickspace \text{conditional} \\ \text{v} = \thickspace \text{values} \\ = true \thickspace \text{true value} \\ = false \thickspace \text{false value} \ \ \ \ \ (11)
+\displaystyle t = \ \text{terms} \\ = true \ \text{constant true} \\ = false \ \text{constant false} \\ = if \ t \ then \ t \ else \ t \ \text{conditional} \\ \text{v} = \ \text{values} \\ = true \ \text{true value} \\ = false \ \text{false value} \ \ \ \ \ (11)
 $$
 
 
@@ -166,7 +166,7 @@ The evaluation relation is a binary relation on the set of terms.
 Evaluation: t $\rightarrow$ t‘
 
 $$
-\displaystyle if \thickspace true \thickspace then \thickspace t \thickspace else \thickspace u \thickspace \rightarrow \thickspace t \thickspace \text{E-IfTrue} \\ if \thickspace false \thickspace then \thickspace t \thickspace else \thickspace u \thickspace \rightarrow u \thickspace \text{E-IfFalse} \\ \frac{t \rightarrow u} $ if \thickspace t \thickspace then \thickspace v \thickspace else \thickspace w \thickspace \rightarrow \thickspace if \thickspace u \thickspace then \thickspace v \thickspace else \thickspace w } \text{\textsc{E-If}} \ \ \ \ \ (12)
+\displaystyle if \ true \ then \ t \ else \ u \ \rightarrow \ t \ \text{E-IfTrue} \\ if \ false \ then \ t \ else \ u \ \rightarrow u \ \text{E-IfFalse} \\ \frac{t \rightarrow u} $ if \ t \ then \ v \ else \ w \ \rightarrow \ if \ u \ then \ v \ else \ w } \text{\textsc{E-If}} \ \ \ \ \ (12)
 $$
 
 
@@ -199,7 +199,7 @@ Consider a language with grammar as below:
 Syntax:
 
 $$
-\displaystyle t = \text{terms} \\ = 0 \thickspace \text{constant 0} \\ = succ \thickspace t \thickspace \text{successor} \\ = pred \thickspace t \thickspace \text{predecessor} \\ = iszero \thickspace t \thickspace \text{zero test} \\ = true \thickspace \text{constant true} \\ = false \thickspace \text{constant false} \\ = if \thickspace t \thickspace then \thickspace t \thickspace else \thickspace t \thickspace \text{conditional} \\ \text{v} = \text{values} \\ = true \thickspace \text{true value} \\ = false \thickspace \text{false value} \\ = nv \text{numeric value} \\ \text{nv} = \text{numeric values} \\ = 0 \thickspace \text{0 value} \\ = succ \thickspace nv \thickspace \text{successor value} \ \ \ \ \ (13)
+\displaystyle t = \text{terms} \\ = 0 \ \text{constant 0} \\ = succ \ t \ \text{successor} \\ = pred \ t \ \text{predecessor} \\ = iszero \ t \ \text{zero test} \\ = true \ \text{constant true} \\ = false \ \text{constant false} \\ = if \ t \ then \ t \ else \ t \ \text{conditional} \\ \text{v} = \text{values} \\ = true \ \text{true value} \\ = false \ \text{false value} \\ = nv \text{numeric value} \\ \text{nv} = \text{numeric values} \\ = 0 \ \text{0 value} \\ = succ \ nv \ \text{successor value} \ \ \ \ \ (13)
 $$
 
 
@@ -210,7 +210,7 @@ The evaluation relation is a binary relation on the set of terms.
 Evaluation: t $\rightarrow$ t‘
 
 $$
-\displaystyle if \thickspace true \thickspace then \thickspace t \thickspace else \thickspace u \thickspace \rightarrow \thickspace t \thickspace \text{E-IfTrue$ \\ if \thickspace false \thickspace then \thickspace t \thickspace else \thickspace u \thickspace \rightarrow \thickspace u \thickspace \text{E-IfFalse} \\ \frac{t \thickspace \rightarrow \thickspace u}{if \thickspace t \thickspace then \thickspace v \thickspace else \thickspace w} \rightarrow if \thickspace u \thickspace then \thickspace v \thickspace else \thickspace w \text{\textsc{E-If}} \ \ \ \ \ (14)
+\displaystyle if \ true \ then \ t \ else \ u \ \rightarrow \ t \ \text{E-IfTrue$ \\ if \ false \ then \ t \ else \ u \ \rightarrow \ u \ \text{E-IfFalse} \\ \frac{t \ \rightarrow \ u}{if \ t \ then \ v \ else \ w} \rightarrow if \ u \ then \ v \ else \ w \text{\textsc{E-If}} \ \ \ \ \ (14)
 $$
 
 
