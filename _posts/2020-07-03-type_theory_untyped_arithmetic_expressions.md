@@ -45,7 +45,8 @@ Definition 1 Terms, Inductively: The set of terms is the smallest set $ \mathcal
 
 $true, false, 0$ $\subseteq \mathcal{T}$.
 
-if $t_1$ $\in \mathcal{T}$ then succ({t_1}), pred({t_1}), iszero({t_1}) $\subseteq \mathcal{T}}.
+if $t_1$ $\in \mathcal{T}$ then succ($t_1$), pred($t_1$), iszero($t_1$) $\subseteq \mathcal{T}$
+
 
 if $t_1$ $\in \mathcal{T}}, $t_2 \in \mathcal{T}$ and $t_3 \in \mathcal{T}$ then if $t_1$ then $t_2$ else $t_3 \in \mathcal{T}}. 
 
