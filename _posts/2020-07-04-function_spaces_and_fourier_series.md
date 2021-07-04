@@ -26,7 +26,7 @@ Thus our space contains vectors with an infinite sequence of components. The len
 Length squared:
 
 $$
-\displaystyle \lVert v \rVert^2 = v_1^2 + $v_2}^2 + \dots \ \ \ \ \ (1)
+\displaystyle \lVert v \rVert ^ 2 = v_1^2 + {v_2} ^ 2 + \dots \ \ \ \ \ (1)
 $$
 
 
