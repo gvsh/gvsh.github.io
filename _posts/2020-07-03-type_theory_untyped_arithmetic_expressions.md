@@ -90,7 +90,7 @@ $$
 Rules set 3:
 
 $$
-\displaystyle \frac{ t_1 \in \mathcal{T}, \thickspace t_2 \in \mathcal{T}, \thickspace t_3 \in \mathcal{T} } $t_1 \thickspace then \thickspace t_2 \thickspace else \thickspace t_3 \in \mathcal{T}}. \ \ \ \ \ (7)
+\displaystyle \frac{ t_1 \in \mathcal{T}, \thickspace t_2 \in \mathcal{T}, \thickspace t_3 \in \mathcal{T} } {t_1 \thickspace then \thickspace t_2 \thickspace else \thickspace t_3 \in \mathcal{T}}. \ \ \ \ \ (7)
 $$
 
 
